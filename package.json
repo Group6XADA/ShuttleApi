@@ -1,0 +1,16 @@
+{
+  "name": "shuttleapi",
+  "version": "1.0.0",
+  "description": "Backend API",
+  "main": "\\",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "NEMathibela",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  }
+}
