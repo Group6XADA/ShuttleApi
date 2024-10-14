@@ -23,6 +23,24 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+//Insert Create User
+
+//Read User
+
+//Insert Update User
+
+//Delete User
+
+//Create Booking
+
+//Read Bookings
+
+//Read All Bookings
+
+//Update Booking
+
+//Delete Booking
+
 // Start the server and listen on the specified port
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
