@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
-const mongoose  = require('mongoose');
+const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
+const bodyParser = require('body-parser');
+routes = require('./Routes/projectRoutes'); // Import the routes file
 
 const port = 3000;
 const dbString = process.env.MONGODB_URI;
@@ -22,6 +24,12 @@ app.use(cors());
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+
+// Middleware
+app.use(bodyParser.json());   
+
+// Use the imported routes
+app.use('/api', routes);
 
 //Insert Create User
 
